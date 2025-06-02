@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CarHub - Автосервис</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+      animation: fadeInUp 1.2s ease-out;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #ecf0f1;
+      margin: 8px 0;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+    ul li:hover {
+      background: #d0d7db;
+    }
+    .contacts {
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+    .contacts p {
+      margin: 8px 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 30px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #777;
+      background: #ecf0f1;
+      margin-top: 40px;
+    }
+    a.phone-link {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.phone-link:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CarHub — Автосервис в Кишинёве</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Наши услуги</h2>
+      <ul>
+        <li>Диагностика</li>
+        <li>Автоэлектрик</li>
+        <li>Ремонт ходовой</li>
+        <li>Замена масел и фильтров</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <img src="https://images.unsplash.com/photo-1616002562375-5fd5ef08c768?auto=format&fit=crop&w=800&q=80" alt="Автосервис 1">
+      <img src="https://images.unsplash.com/photo-1615936150914-d1bfb4a2d317?auto=format&fit=crop&w=800&q=80" alt="Автосервис 2">
+    </section>
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p>📞 Телефон: <a class="phone-link" href="tel:+068015047">0680 150 47</a></p>
+      <p>📍 Адрес: Chisinau, Durlesti, Strada Livezilor 16</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 CarHub. Все права защищены.
+  </footer>
+</body>
+</html>
